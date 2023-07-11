@@ -5,6 +5,7 @@ const pokeNName = document.getElementById("poke-name");
 const pokeId = document.getElementById("poke-id");
 const pokeType = document.getElementById("poke-type");
 const pokeAbility = document.getElementById("poke-ability");
+document.getElementById('poke-image').style.display = 'none';
 
 searchBtn.addEventListener("click", async () => {
   let pokeName = pokeNameInput.value.toLowerCase();
@@ -25,8 +26,9 @@ searchBtn.addEventListener("click", async () => {
 
   // Asignar la URL de la imagen al atributo src del elemento de imagen
   pokeImage.src = imageUrl;
+  document.getElementById('poke-image').style.display = 'block';
 
-  pokeNName.innerHTML = "Nombre: " + name;
+  pokeNName.innerHTML = name[0].toUpperCase() + name.slice(1);
   pokeId.innerHTML = "ID: " + id;
   pokeType.innerHTML = "Tipo: " + type;
   pokeAbility.innerHTML = "Habilidad: " + ability;
