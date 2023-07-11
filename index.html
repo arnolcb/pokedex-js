@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<header>
+    <div class="logo">
+        <img src="img/pokemon.svg" alt="Logo de Pokemon">
+    </div>
+</header>
+
+<main>
+<body>
+    <div class="container">
+        <div class="title">
+                <h1>¡Bienvenido a la Pokédex!</h1>
+                <p>¿Quieres saber más sobre los Pokémon? ¡Estás en el lugar correcto!</p>
+        </div>
+        <div class="search-container">
+                <h2>¿Qué Pokémon estás buscando?</h2>
+                <div class="search">
+                    <div class="input-group">
+                        <input class="form-control" type="text" id="search" placeholder="Escribe el nombre del Pokémon">
+                        <button type="button" class="btn btn-primary" id="search-button">Buscar</button>
+                    </div>
+                    
+                    <!--<img id="poke-image" src="" alt="Pokémon Image">-->
+                </div>
+        </div>
+
+        <div class="pokemon-card">
+            <div class="pokemon-image">
+                <img id="poke-image" src="" alt="Pokémon Image">
+            </div>
+            <div class="pokemon-info">
+                <h3 id="poke-name"></h3>
+                <p id="poke-id"></p>
+                <p id="poke-type"></p>
+                <p id="poke-ability"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</main>
+
+<footer>
+</footer>
+</html>

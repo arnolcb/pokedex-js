@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*
+@font-face {
+    font-family: 'Roboto';
+    src: url(/font/Pokemon\ Solid.ttf);
+}*/
+
+header{
+    /*background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;*/
+    position: relative;
+    background-color: #e2e2e2;
+}
+
+header .logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header .logo img{
+    width: 80%;
+    height: 80%;
+}
+
+main {
+    padding: 20px;
+}
+
+main .container{
+    text-align: center;
+}
+
+.container h1{
+    font-size: 40px;
+    /*
+    font-family: 'Roboto';
+    color: #000;
+    line-height: 2;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    */
+    margin-bottom: 10px;
+}
+
+.search img{
+    
+}
